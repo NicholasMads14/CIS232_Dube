@@ -1,12 +1,15 @@
 class Student {
-    public String name;
-    public int score;
+    // Initialize variables
+    String name;
+    int score;
 
-    public Student(String studName, int studScore) {
+    // Default Student constructor
+    Student(String studName, int studScore) {
         name = studName;
         score = studScore;
     }
 
+    // Method for calculating grade, returns char
     public char calculateGrade() {
         char grade;
         if (score >= 90) {

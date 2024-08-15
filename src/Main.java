@@ -1,8 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-
         // Creates firstStudent object
-        Student firstStudent = new Student("Nicholas Madson", 75);
+        Student firstStudent = new Student("Nicholas Madson", 85);
 
         // Calculates student grade and assigns it to a variable
         char grade = firstStudent.calculateGrade();
