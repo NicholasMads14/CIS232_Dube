@@ -1,8 +1,8 @@
-public abstract class Shape {
-    String color;
+public interface Shape {
+    String color = "";
 
     // METHODS
-    public abstract void color();
-    public abstract void calculateArea();
+    public void color();
+    public void calculateArea();
 
 }

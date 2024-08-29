@@ -1,11 +1,12 @@
 import static java.lang.Math.PI;
 
-public class Circle extends Shape {
-    double radius;;
+public class Circle implements Shape {
+    double radius;
     double area;
     String color = "Green";
 
     public Circle(double radius) {
+
         this.radius = radius;
     }
 
@@ -18,6 +19,6 @@ public class Circle extends Shape {
     @Override
     public void calculateArea() {
         area = PI * radius * radius;
-        System.out.printf("The area of a circle with radius %d is %.2f\n", (int) radius, area);
+        System.out.printf("The area of a circle with radius %.2f is %.2f\n", radius, area);
     }
 }

@@ -1,4 +1,4 @@
-public class Square extends Shape {
+public class Square implements Shape {
     double sideLength;
     double area;
     String color = "Red";
@@ -16,6 +16,6 @@ public class Square extends Shape {
     @Override
     public void calculateArea() {
         area = sideLength * 4;
-        System.out.printf("The area of a square with sides of length %d is %.2f\n", (int) sideLength, area);
+        System.out.printf("The area of a square with sides of length %.2f is %.2f\n", sideLength, area);
     }
 }

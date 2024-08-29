@@ -12,20 +12,20 @@ public class Main {
             Circle c = new Circle(0);
             // Asks user for radius
             System.out.println("What is the radius? ");
-            c.radius = scanner.nextInt();
+            c.radius = scanner.nextDouble();
             // calculates and displays area
             c.calculateArea();
-            c.color();
+//            c.color();
 
         } else if ("square".equals(type)) {
             // Creates new Square object
             Square s = new Square(0);
             // Asks user for side length
             System.out.println("What is the side length? ");
-            s.sideLength = scanner.nextInt();
+            s.sideLength = scanner.nextDouble();
             // calculates and displays area
             s.calculateArea();
-            s.color();
+//            s.color();
 
         } else {
             System.out.println("You did not input a correct option.");
