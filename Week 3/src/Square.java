@@ -1,6 +1,7 @@
 public class Square extends Shape {
     double sideLength;
     double area;
+    String color = "Red";
 
     // Constructor
     public Square(double sideLength) {
@@ -8,7 +9,13 @@ public class Square extends Shape {
     }
 
     @Override
+    public void color() {
+        System.out.printf("The color of this shape is %s\n", color);
+    }
+
+    @Override
     public void calculateArea() {
         area = sideLength * 4;
+        System.out.printf("The area of a square with sides of length %d is %.2f\n", (int) sideLength, area);
     }
 }
