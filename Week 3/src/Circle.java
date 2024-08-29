@@ -21,4 +21,5 @@ public class Circle implements Shape {
         area = PI * radius * radius;
         System.out.printf("The area of a circle with radius %.2f is %.2f\n", radius, area);
     }
+    // adding new comments
 }
